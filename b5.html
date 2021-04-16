@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str =
+        "Elit lorem -98 cum 8 -21 deserunt nisi 12 reprehenderit! -44s Dignissimos  11 molestiae ut voluptatibus";
+    let result = str.split(" ").reduce(function(total, e) {
+        return total + (parseInt(e) < 0);
+    }, 0);
+    document.write(result);
+</script>
+
+</body>
+    </html>
